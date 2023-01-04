@@ -8,6 +8,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/odasaraik/testgRPC/pb"
+
 	"google.golang.org/grpc"
 )
 
@@ -45,7 +46,7 @@ func main() {
 	})
 
 	// Run HTTP server
-	if err := r.Run(":3000"); err != nil {
+	if err := r.Run(":3001"); err != nil {
 		log.Fatalf("Failed to run server: %v", err)
 	}
 }
